@@ -61,11 +61,11 @@ for filepath in filepaths:
     pdf.cell(w=30, h=8, txt=str(total_sum), border=1, ln=1)
 
     #add total sum sentence
-    pdf.set_font(family="Times", size=10)
+    pdf.set_font(family="Times", size=10, style="B")
     pdf.cell(w=30, h=8, txt=f"The total sum is {total_sum}", ln=1)
 
     #add company name and logo
-    pdf.set_font(family="Times", size=14)
+    pdf.set_font(family="Times", size=14, style="B")
     pdf.cell(w=20, h=8, txt="Chill.Inc", ln=0)
     pdf.image("images/logo.png", w=10)
 
